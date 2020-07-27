@@ -31,6 +31,7 @@ h1, h2, h3 {
 nav {
   font-family: Oswald, sans-serif;
   text-align: center;
+  margin: 20px auto;
 }
 
 /* Image width for positioning */
