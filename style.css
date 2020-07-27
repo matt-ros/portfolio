@@ -1,0 +1,107 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Styling of paragraph and unordered list elements */
+
+p, ul {
+  font-family: Raleway, sans-serif;
+  text-align: left;
+  width: 550px;
+  margin: 20px auto;
+}
+
+/* Specific styling for header paragraph */
+
+header p {
+  text-align: center;
+}
+
+/* Styling of heading elements */
+
+h1, h2, h3 {
+  font-family: Oswald, sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Styling of navigation element */
+
+nav {
+  font-family: Oswald, sans-serif;
+  text-align: center;
+}
+
+/* Image width for positioning */
+
+img {
+  width: 550px;
+}
+
+/* Different font size for each heading type */
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+footer h3 {
+  font-size: 12px;
+}
+
+/* Background and text color for header and footer elements */
+
+header, footer {
+  background-color: #581F18;
+  color: lightgray;
+  padding: 10px;
+}
+
+/* Background and text color for main element */
+
+main {
+  background-image: url('images/tweed.png');
+  color: lightgray;
+  padding: 10px;
+}
+
+/* Styling of links */
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #F0A202;
+}
+
+a:visited {
+  color: #D95D39;
+}
+
+a:hover {
+  color: #E5731F;
+}
+
+a:active{
+  color: #F18805;
+}
+
+/* Styling to create centered diamond-shaped horizontal rule */
+
+hr {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #581F18;
+  rotate: 45deg;
+  background-color: #364B97;
+  margin: 20px auto;
+}
