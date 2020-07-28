@@ -5,7 +5,7 @@
 
 /* Styling of paragraph and unordered list elements */
 
-p, ul {
+p, ol {
   font-family: Raleway, sans-serif;
   text-align: left;
   width: 550px;
@@ -26,12 +26,17 @@ h1, h2, h3 {
   text-align: center;
 }
 
-/* Styling of navigation element */
+/* Styling of unordered list navigation element */
 
-nav {
+ul {
   font-family: Oswald, sans-serif;
+  letter-spacing: 1px;
   text-align: center;
-  margin: 20px auto;
+  padding: 0px;
+}
+
+ul li {
+  display: inline-block;
 }
 
 /* Image width for positioning */
