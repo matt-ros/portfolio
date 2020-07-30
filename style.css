@@ -3,13 +3,11 @@
   box-sizing: border-box;
 }
 
-/* Styling of paragraph and unordered list elements */
+/* Styling of paragraph and ordered list elements */
 
 p, ol {
   font-family: Raleway, sans-serif;
   text-align: left;
-  width: 550px;
-  margin: 20px auto;
 }
 
 /* Specific styling for header paragraph */
@@ -39,10 +37,17 @@ ul li {
   display: inline-block;
 }
 
+
 /* Image width for positioning */
 
 img {
-  width: 550px;
+  width: 100%;
+}
+
+/* Rounded corners on some images */
+
+.round-corners {
+  border-radius: 10px;
 }
 
 /* Different font size for each heading type */
@@ -110,4 +115,32 @@ hr {
   rotate: 45deg;
   background-color: #364B97;
   margin: 20px auto;
+}
+
+/* Groups and Items (Mobile First */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.double {
+  flex: 2;
+}
+
+.paragraph {
+  margin: 0 10px;
+}
+
+/* Groups and Items (Desktop) */
+
+@media all and (min-width: 800px) {
+  .group {
+    flex-direction: row;
+  }
 }
