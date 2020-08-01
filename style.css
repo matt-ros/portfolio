@@ -5,9 +5,23 @@
 
 /* Styling of paragraph and ordered list elements */
 
-p, ol {
+p, ol, label, form input[type=text], form textarea {
   font-family: Raleway, sans-serif;
   text-align: left;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+
+ol li {
+  font-size: 24px;
 }
 
 /* Specific styling for header paragraph */
@@ -31,6 +45,8 @@ ul {
   letter-spacing: 1px;
   text-align: center;
   padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 ul li {
@@ -70,7 +86,13 @@ footer h3 {
 
 /* Background and text color for header and footer elements */
 
-header, footer {
+header {
+  background-color: #581F18;
+  color: lightgray;
+  padding: 10px;
+}
+
+footer {
   background-color: #581F18;
   color: lightgray;
   padding: 10px;
@@ -117,9 +139,9 @@ hr {
   margin: 20px auto;
 }
 
-/* Groups and Items (Mobile First */
+/* Groups and Items (Mobile First) */
 
-.group {
+.group, .group-contact {
   display: flex;
   flex-direction: column;
 }
@@ -137,10 +159,70 @@ hr {
   margin: 0 10px;
 }
 
+form input, form textarea {
+  width: 100%;
+  display: block;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form button {
+  display: block;
+  margin-top: 10px;
+}
+
 /* Groups and Items (Desktop) */
 
 @media all and (min-width: 800px) {
-  .group {
+
+  .group, .group-contact {
     flex-direction: row;
+  }
+
+  .group-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item-contact {
+    width: 48%;
+    margin-bottom: 2%;
+  }
+
+  .item-contact p {
+    text-align: center;
+  }
+
+  .item-contact:nth-child(3n-2) {
+    width: 100%;
+    align-self: center;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0;
+  }
+
+  h1, header p {
+    margin: 0 auto;
+    text-align: left;
+    padding: 5px 20px;
+  }
+
+  ul {
+    justify-content: flex-end;
+  }
+
+  ul li {
+    padding: 20px;
+  }
+
+  header .item {
+    flex: 1;
   }
 }
