@@ -14,7 +14,7 @@ ol {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   list-style-type: none;
   padding-bottom: 20px;
@@ -220,9 +220,5 @@ form button {
 
   ul li {
     padding: 20px;
-  }
-
-  header .item {
-    flex: 1;
   }
 }
