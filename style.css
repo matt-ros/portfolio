@@ -10,6 +10,10 @@ p, ol, label, form input[type=text], form textarea {
   text-align: left;
 }
 
+#intro p {
+  text-align: center;
+}
+
 ol {
   display: flex;
   flex-direction: column;
@@ -101,7 +105,7 @@ footer {
 /* Background and text color for main element */
 
 main {
-  background-image: url('images/tweed.png');
+  background: url('images/tweed.png'), #505050;
   color: lightgray;
   padding: 10px;
 }
