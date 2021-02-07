@@ -6,7 +6,7 @@
 /* Styling of paragraph and ordered list elements */
 
 p, ol, label, form input[type=text], form textarea {
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: left;
 }
 
@@ -22,6 +22,7 @@ ol {
   align-items: center;
   list-style-type: none;
   padding-bottom: 20px;
+  padding-left: 0;
 }
 
 ol li {
@@ -37,7 +38,7 @@ header p {
 /* Styling of heading elements */
 
 h1, h2, h3 {
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   letter-spacing: 2px;
   text-align: center;
 }
@@ -45,7 +46,7 @@ h1, h2, h3 {
 /* Styling of unordered list navigation element */
 
 ul {
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
   text-align: center;
   padding: 0px;
@@ -105,7 +106,7 @@ footer {
 /* Background and text color for main element */
 
 main {
-  background: url('images/tweed.png'), #505050;
+  background: url('images/tweed.png'), #404040;
   color: lightgray;
   padding: 10px;
 }
@@ -166,6 +167,7 @@ hr {
 form input, form textarea {
   width: 100%;
   display: block;
+  border-radius: 5px;
 }
 
 form textarea {
@@ -175,6 +177,21 @@ form textarea {
 form button {
   display: block;
   margin-top: 10px;
+  padding: 5px;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 5px;
+  background-color: #581F18;
+  color: lightgray;
+}
+
+@media all and (min-width: 500px) {
+  #photo-div {
+    text-align: center;
+  }
+  #photo {
+    width: 70%;
+    margin: auto;
+  }
 }
 
 /* Groups and Items (Desktop) */
